@@ -25,4 +25,10 @@ public class DataAccess {
     public List<shop_app> getByType(String a) {
         return sd.getByType(a);
     }
+
+
+    public String addShopData(shop_app a) {
+        sd.save(a);
+        return "success";
+    }
 }
