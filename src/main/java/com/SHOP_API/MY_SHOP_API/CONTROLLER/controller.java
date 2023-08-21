@@ -1,4 +1,4 @@
-package com.SHOP_API.MY_SHOP_API;
+package com.SHOP_API.MY_SHOP_API.CONTROLLER;
 import com.SHOP_API.MY_SHOP_API.SERVICE.DataAccess;
 import com.SHOP_API.MY_SHOP_API.SHOP_DAO.shop_app;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,11 +30,11 @@ public class controller {
         }
     }
 
-//    @GetMapping("/id/{id}")
-//    public shop_app getById(@PathVariable String id){
-//
-//        return da.getById(Integer.parseInt(id));
-//    }
+    @GetMapping("/id/{id}")
+    public shop_app getById(@PathVariable String id){
+
+        return da.getById(Integer.parseInt(id));
+    }
     @GetMapping("/type/{type}")
     public ResponseEntity<List<shop_app>> getByType(@PathVariable String type)
     {
