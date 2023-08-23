@@ -1,8 +1,8 @@
 package com.SHOP_API.MY_SHOP_API.SHOP_DAO;
 
+import com.SHOP_API.MY_SHOP_API.MODEL.shop_app;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.lang.NonNullApi;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -14,6 +14,7 @@ public interface Shop_DAO_Interface extends JpaRepository<shop_app,Integer> {
 
     List<shop_app> getByType(String a);
 
-    @Query(value="SELECT * FROM shop_app s WHERE s.type =:type ORDER BY RANDOM() LIMIT=:numItem", nativeQuery = true)
-    List<shop_app> findRandomQustionByType(String type, int numItem);
+    @Query(value="SELECT * FROM shop_app s WHERE s.type =:type ORDER BY RANDOM() LIMIT :numItem", nativeQuery = true)
+    List<shop_app> findRandomItemsByType(String type, int numItem);
+
 }

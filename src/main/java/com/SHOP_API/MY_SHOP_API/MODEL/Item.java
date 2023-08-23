@@ -1,5 +1,6 @@
-package com.SHOP_API.MY_SHOP_API.SHOP_DAO;
+package com.SHOP_API.MY_SHOP_API.MODEL;
 
+import com.SHOP_API.MY_SHOP_API.MODEL.shop_app;
 import jakarta.persistence.*;
 import lombok.Data;
 

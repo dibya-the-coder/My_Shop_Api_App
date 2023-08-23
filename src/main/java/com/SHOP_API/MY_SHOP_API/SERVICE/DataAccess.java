@@ -1,7 +1,7 @@
 package com.SHOP_API.MY_SHOP_API.SERVICE;
 
 import com.SHOP_API.MY_SHOP_API.SHOP_DAO.Shop_DAO_Interface;
-import com.SHOP_API.MY_SHOP_API.SHOP_DAO.shop_app;
+import com.SHOP_API.MY_SHOP_API.MODEL.shop_app;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
 package com.SHOP_API.MY_SHOP_API.CONTROLLER;
 import com.SHOP_API.MY_SHOP_API.SERVICE.DataAccess;
-import com.SHOP_API.MY_SHOP_API.SHOP_DAO.shop_app;
+import com.SHOP_API.MY_SHOP_API.MODEL.shop_app;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.SHOP_API.MY_SHOP_API.SHOP_DAO;
+package com.SHOP_API.MY_SHOP_API.MODEL;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
